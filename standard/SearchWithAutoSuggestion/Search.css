@@ -1,0 +1,13 @@
+#input-box {
+    margin: 10px auto 2px auto;
+    width: 500px;
+  }
+  
+  #suggestion-box {
+  /*   min-height: 15px; */
+    border: 1px solid black;
+    width: 500px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
