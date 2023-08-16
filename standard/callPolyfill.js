@@ -9,7 +9,7 @@ const user = {
 
 // printFunc.call(user, "Jabalpur");
 
-Function.prototype.myCall = function(context, ...args){
+Function.prototype.myCall = function(context={}, ...args){
     if(typeof this !== 'function'){
         // console.error('should be called over a function');
         throw new Error('should be called over a function');
