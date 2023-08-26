@@ -1,5 +1,5 @@
 // make a function that can calculate sum no matter how it is called 
-// sum(1)(2)(3)(4)....(n)()  or   sum(1,2,3)(4)(5,6)...(n)();
+// sum(1)(2)(3)(4)....(n)()  or   sum(1,2,3)(4)(5,6)...(n)();     v.v. imp 
 
 
 const sum = (...args1) => {
