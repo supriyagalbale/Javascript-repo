@@ -1,0 +1,25 @@
+<div>
+    <input id="debounce-input" onkeyup=betterFunction()></input>
+    <script src="./debouncing.js"></script>
+    <script>
+        function getData(data) {
+  // console.log(data);
+  console.log("throttle");
+}
+const throttle = (func, delay) => {
+  let flag = true;
+  return function () {
+    if (flag) {
+      func();
+      flag = false;
+      setTimeout(() => {
+        flag = true;
+      }, delay);
+    }
+  };
+};
+
+betterFunctionThrottle = throttle(getData, 5000);
+window.addEventListener("resize", betterFunctionThrottle);
+    </script>
+</div>
