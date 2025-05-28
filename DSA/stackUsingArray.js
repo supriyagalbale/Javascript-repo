@@ -1,12 +1,14 @@
 class Stack {
         #s
-
     constructor(){
         this.#s = new Array()
     }
 
     size(){
         return this.#s.length
+    }
+    empty(){
+        return this.size()===0
     }
 
     top(){
@@ -21,7 +23,7 @@ class Stack {
     }
 
     pop(){
-        this.#s.pop()
+        return this.#s.pop()
     }
 
     print(){
